@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Location de Voitures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion de Location de Voitures</h1>
+
+        <!-- Grille pour organiser les sections -->
+        <div class="grid-container">
+            <!-- Section pour ajouter une voiture -->
+            <div class="section" id="addCar">
+                <h2>Ajouter une voiture</h2>
+                <input type="text" id="carBrand" placeholder="Marque">
+                <input type="text" id="carModel" placeholder="Modèle">
+                <input type="number" id="carYear" placeholder="Année">
+                <input type="text" id="carPlate" placeholder="Plaque d'immatriculation">
+                <button onclick="addCar()">Ajouter une voiture</button>
+            </div>
+
+            <!-- Section pour louer une voiture -->
+            <div class="section" id="rentCar">
+                <h2>Louer une voiture</h2>
+                <input type="text" id="rentPlate" placeholder="Plaque d'immatriculation">
+                <input type="text" id="renterName" placeholder="Nom du locataire">
+                <button onclick="rentCar()">Louer la voiture</button>
+            </div>
+
+            <!-- Section pour afficher les voitures disponibles -->
+            <div class="section" id="availableCars">
+                <h2>Voitures disponibles</h2>
+                <ul id="carList"></ul>
+            </div>
+
+            <!-- Section pour afficher les voitures louées -->
+            <div class="section" id="rentedCars">
+                <h2>Voitures louées</h2>
+                <ul id="rentedList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

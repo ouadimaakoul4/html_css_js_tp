@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librairie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des Produits de Librairie</h1>
+        
+        <!-- Formulaire pour ajouter un produit -->
+        <div class="form-container">
+            <form id="addProductForm">
+                <h2>Ajouter un produit</h2>
+                <input type="text" id="productName" placeholder="Nom du produit" required>
+                <input type="text" id="productCategory" placeholder="Catégorie (ex: Livre, Crayon)" required>
+                <input type="number" id="priceHT" placeholder="Prix HT" step="0.50" required>
+                <button type="submit">Ajouter</button>
+            </form>
+
+            <!-- Formulaire pour modifier un produit -->
+            <form id="editProductForm" >
+                <h2>Modifier un produit</h2>
+                <input type="text" id="editProductName" placeholder="Nom du produit" required>
+                <input type="text" id="editProductCategory" placeholder="Catégorie" required>
+                <input type="number" id="editPriceHT" placeholder="Prix HT" step="0.50" required>
+                <button type="submit">Enregistrer</button>
+                <button type="button" id="cancelEdit">Annuler</button>
+            </form>
+        </div>
+
+        <!-- Liste des produits dans une div -->
+        <div id="productList" class="product-list">
+            <h2>Liste des produits</h2>
+            <div id="productsContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

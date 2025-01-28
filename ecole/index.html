@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion d'École</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion d'École</h1>
+
+        <!-- Grille pour organiser les sections -->
+        <div class="grid-container">
+            <!-- Section pour ajouter un professeur -->
+            <div class="section" id="addTeacher">
+                <h2>Ajouter un professeur</h2>
+                <input type="text" id="teacherName" placeholder="Nom du professeur">
+                <input type="text" id="teacherSubject" placeholder="Matière enseignée">
+                <input type="email" id="teacherEmail" placeholder="Email">
+                <button onclick="addTeacher()">Ajouter un professeur</button>
+            </div>
+
+            <!-- Section pour ajouter un étudiant -->
+            <div class="section" id="addStudent">
+                <h2>Ajouter un étudiant</h2>
+                <input type="text" id="studentName" placeholder="Nom de l'étudiant">
+                <input type="number" id="studentAge" placeholder="Âge">
+                <input type="text" id="studentClass" placeholder="Classe">
+                <button onclick="addStudent()">Ajouter un étudiant</button>
+            </div>
+
+            <!-- Section pour afficher les listes -->
+            <div class="section" id="lists">
+                <h2>Listes</h2>
+                <button onclick="showTeachers()">Afficher les professeurs</button>
+                <button onclick="showStudents()">Afficher les étudiants</button>
+                <ul id="displayList"></ul>
+            </div>
+
+            <!-- Section pour modifier les entrées -->
+            <div class="section" id="modifySection">
+                <h2>Modifier une entrée</h2>
+                <input type="text" id="modifyId" placeholder="ID de l'entrée">
+                <input type="text" id="modifyField" placeholder="Champ à modifier">
+                <input type="text" id="modifyValue" placeholder="Nouvelle valeur">
+                <button onclick="modifyEntry()">Modifier</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

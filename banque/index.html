@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Bancaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Bancaire</h1>
+        
+        <div id="createAccount">
+            <h2>Créer un compte</h2>
+            <input type="text" id="name" placeholder="Nom">
+            <input type="text" id="address" placeholder="Adresse">
+            <input type="email" id="email" placeholder="Email">
+            <button onclick="createAccount()">Créer un compte</button>
+        </div>
+
+        <div id="accountActions">
+            <h2>Actions sur le compte</h2>
+            <input type="number" id="accountNumber" placeholder="Numéro de compte">
+            <input type="number" id="amount" placeholder="Montant">
+            <button onclick="deposit()">Déposer</button>
+            <button onclick="withdraw()">Retirer</button>
+        </div>
+
+        <div id="clientList">
+            <h2>Liste des clients</h2>
+            <ul id="clients"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

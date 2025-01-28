@@ -1,0 +1,99 @@
+/* Couleurs modernes avec thème rouge */
+:root {
+    --primary-color: #e74c3c; /* Rouge */
+    --secondary-color: #c0392b; /* Rouge foncé */
+    --background-color: #f9ebea; /* Rouge clair pour l'arrière-plan */
+    --text-color: #2c3e50; /* Gris foncé pour le texte */
+    --white: #ffffff; /* Blanc */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Réinitialisation des styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Grille pour organiser les sections */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styles pour les sections */
+.section {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+/* Styles pour les inputs et boutons */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Styles pour les listes */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: var(--background-color);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
